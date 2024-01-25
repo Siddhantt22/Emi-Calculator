@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Emi-Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+           <h1> JavaSript <br> <span> EMI Calculator</span> </h1>
+
+           <div class="input-box">
+            Loan amount <br>
+            <input type="text" placeholder="Enter loan amount" value="1000000" class="p"><br><br>
+            Rate of interest (p.a) <br>
+            <input type="text" placeholder="Enter loan amount" value="6.5" class="r"><br><br>
+            loan tenure (years) <br>
+            <input type="text" placeholder="Enter loan amount" value="5" class="n">
+            <br><br>
+            <button id="btn">Calculate</button>
+           </div>
+           
+        </div>
+        <div class="output">
+            <h2 >Monthly EMI</h2>
+            <p class="me">19566</p><br>
+            <h2 >Principal Amount</h2>
+            <p id="pa">1000000</p><br>
+            <h2>Total interest</h2>
+            <p id="ti">173969</p><br>
+            <h2>Total amount</h2>
+            <p id="ta">1173696</p><br>
+        
+        </div>
+        <div class="chart">
+            <div id="container"></div>
+        </div>
+
+    </div>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
